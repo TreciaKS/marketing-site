@@ -15,16 +15,6 @@ import useFetch from '../hooks/useFetch';
             <hr className="" />
             <p>We help you find your new home</p>
     
-          <form className="">
-            <h5>Interested in joining our Newsletter</h5>
-            <h6>Sign up with your email below</h6>
-    
-            <label htmlFor="email">
-              Email Address:
-              <input type="email" />
-            </label>
-            <button>Signup</button>
-          </form>
             {estate.splice(0, 2).map((house) => (
               <article className="" key={house.id}>
                 <h2>{house.attributes.name}</h2>
