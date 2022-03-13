@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom'
 export default function NavHeader() {
     return (
         <div className="">
-          <h1>My Estate</h1>
+          <h1 className=''>Housed</h1>
           <nav className="">
-            <ul>
-              <Link to="/" style={{ textDecoration: 'none' }}>
+            <ul className=''>
+              <Link to="/">
                 <li>Home</li>
               </Link>
-              <Link to="estates" style={{ textDecoration: 'none' }}>
+              <Link to="estates">
                 <li>Estates</li>
+              </Link>
+              <Link to="estates">
+                <li>Github</li>
               </Link>
             </ul>
           </nav>
