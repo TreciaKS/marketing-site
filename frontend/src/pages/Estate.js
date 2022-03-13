@@ -1,4 +1,3 @@
-// frontend/src/pages/estates/Estates.js
 import React from 'react'
 import { Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
@@ -24,7 +23,7 @@ export default function Estatepage() {
                                 <div>
                                     <p>{house.attributes.price}</p>
                                     <p>{house.attributes.description}</p>
-                                    <Link to={`${house.id}`}>See More...</Link>
+                                    <Link to={`${house.id}`}>Read More...</Link>
                                 </div>
                             </section>
                         </article>
