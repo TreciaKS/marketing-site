@@ -3,11 +3,11 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
     
-    function AboutPage() {
-        const { id } = useParams();
-        const { loading, error, estate } = useFetch(`http://localhost:1337/api/estates/${id}?populate=*`)
-        if (loading) return <p> Loading... </p>;
-        if (error) return <p>I'm sorry, an error has occured!</p>;
+function AboutPage() {
+    const { id } = useParams();
+    const { loading, error, estate } = useFetch(`http://localhost:1337/api/estates/${id}?populate=*`)
+    if (loading) return <p> Loading... </p>;
+    if (error) return <p>I'm sorry, an error has occured!</p>;
     
         return (
             <article className="">
