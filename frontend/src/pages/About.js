@@ -10,7 +10,7 @@ export default function AboutPage() {
     
         return (
             <article className="">
-                <h2 className=''>Would you like to view this house or explore similar ones in your desired area? X<span className='underline'>Contact Us</span>!</h2>
+                <h2 className=''>Would you like to view this house or explore similar ones in your desired area? <span className='underline'>Contact Us</span>!</h2>
                 <hr className='' />
                 <section className="">
                     <h2 className=''>{estate.attributes.name}</h2>
