@@ -14,9 +14,14 @@ export default function Homepage() {
             <h2 className="text-red-200">Welcome to Housed</h2>
             <hr className="" />
             <p>On your mobile or computer, you can access all of South Africa's leading Estate Agent properties for sale or rent. You can easily find and manage your favorite properties with Housed user-friendly interface.</p>
-    
+            
+            {/* 
+            planning on creating a grid display benefits or services
+            */}
+
             {estate.splice(0, 2).map((house) => (
               <article className="" key={house.id}>
+                <h1>Featured House Of The Day</h1>
                 <h2>{house.attributes.name}</h2>
                 <section className="">
                   <img
