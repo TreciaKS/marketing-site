@@ -11,9 +11,9 @@ export default function Homepage() {
     return (
         <div className="">
           <section>
-            <h2 className="text-red-200">Welcome to our Estate</h2>
+            <h2 className="text-red-200">Welcome to Housed</h2>
             <hr className="" />
-            <p>We help you find your new home</p>
+            <p>On your mobile or computer, you can access all of South Africa's leading Estate Agent properties for sale or rent. You can easily find and manage your favorite properties with Housed user-friendly interface.</p>
     
             {estate.splice(0, 2).map((house) => (
               <article className="" key={house.id}>
