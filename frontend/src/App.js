@@ -1,11 +1,11 @@
 // frontend/src/App.js
-import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import NavHeader from './pages/Nav';
-import Homepage from './pages/Home';
+import React, { Suspense } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import NavHeader from './pages/Nav'
+import Homepage from './pages/Home'
     
-const About = React.lazy(() => import('./pages/About'));
-const Estates = React.lazy(() => import('./pages/Estate'));
+const About = React.lazy(() => import('./pages/About'))
+const Estates = React.lazy(() => import('./pages/Estate'))
     
 export default function App() {
   return (

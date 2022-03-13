@@ -1,13 +1,13 @@
 // frontend/src/pages/about/About.js
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import useFetch from '../hooks/useFetch';
+import React from 'react'
+import { useParams, Link } from 'react-router-dom'
+import useFetch from '../hooks/useFetch'
     
     function AboutPage() {
         const { id } = useParams();
-        const { loading, error, estate } = useFetch(`http://localhost:1337/api/estates/${id}?populate=*`);
+        const { loading, error, estate } = useFetch(`http://localhost:1337/api/estates/${id}?populate=*`)
         if (loading) return <p> Loading... </p>;
-        if (error) return <p> Error :( </p>;
+        if (error) return <p>I'm sorry, an error has occured!</p>;
     
         return (
             <article className="">
@@ -45,12 +45,12 @@ import useFetch from '../hooks/useFetch';
                                     padding: '5px 10px'
                                 }}
                             >
-                                {'< Back to Home'}
+                                {'< Return to Home'}
                             </Link>
                         </div>
                     </div>
                 </section>
             </article>
-        );
+        )
     }
     export default AboutPage;

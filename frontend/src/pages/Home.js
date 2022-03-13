@@ -3,12 +3,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
     
-    export default function Homepage() {
-      const { estate, error, loading } = useFetch('http://localhost:1337/api/estates?populate=*')
-      if (loading) return <p> Loading... </p>
-      if (error) return <p> I'm sorry, I cannot display anything at the moment </p>
+export default function Homepage() {
+    const { estate, error, loading } = useFetch('http://localhost:1337/api/estates?populate=*')
+    if (loading) return <p> Loading... </p>
+    if (error) return <p> I'm sorry, I cannot display anything at the moment</p>
     
-      return (
+    return (
         <div className="">
           <section>
             <h2>Welcome to our Estate</h2>

@@ -1,28 +1,29 @@
-// frontend/src/hooks/useFetch.js
 import { useState, useEffect } from 'react';
-    import axios from 'axios';
-    export default function useFetch(url) {
-        const [ estate, setEstate ] = useState(null);
-        const [ error, setError ] = useState(null);
-        const [ loading, setLoading ] = useState(true);
-    
-        useEffect(
+import axios from 'axios';
+
+export default function useFetch(url) {
+
+const [ estate, setEstate ] = useState(null)
+const [ error, setError ] = useState(null)
+const [ loading, setLoading ] = useState(true)
+
+    useEffect(
             () => {
                 const fetchData = async () => {
-                    setLoading(true);
+                    setLoading(true)
                     try {
                         const res = await axios.get(url);
-                        setEstate(res.data.data);
-                        setLoading(false);
+                        setEstate(res.data.data)
+                        setLoading(false)
                     } catch (error) {
-                        setError(error);
-                        setLoading(false);
+                        setError(error)
+                        setLoading(false)
                     }
                 };
-                fetchData();
+                fetchData()
             },
             [ url ]
-        );
+        )
     
-        return { estate, error, loading };
+        return { estate, error, loading }
     }

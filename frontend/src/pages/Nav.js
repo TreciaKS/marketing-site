@@ -17,5 +17,5 @@ export default function NavHeader() {
             </ul>
           </nav>
         </div>
-    );
+    )
 }
