@@ -26,7 +26,7 @@ import useFetch from '../hooks/useFetch';
                   <div>
                     <p>{house.attributes.price}</p>
                     <p>{house.attributes.description}</p>
-                    <Link to={`estates/${house.id}`}>See More...</Link>
+                    <Link to={`estates/${house.id}`}>View Page...</Link>
                   </div>
                 </section>
               </article>
