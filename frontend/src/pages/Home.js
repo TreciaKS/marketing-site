@@ -1,12 +1,12 @@
 // frontend/src/pages/home/Home.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import useFetch from '../hooks/useFetch';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import useFetch from '../hooks/useFetch'
     
     export default function Homepage() {
-      const { estate, error, loading } = useFetch('http://localhost:1337/api/estates?populate=*');
-      if (loading) return <p> Loading... </p>;
-      if (error) return <p> I'm sorry, I cannot display anything at the moment </p>;
+      const { estate, error, loading } = useFetch('http://localhost:1337/api/estates?populate=*')
+      if (loading) return <p> Loading... </p>
+      if (error) return <p> I'm sorry, I cannot display anything at the moment </p>
     
       return (
         <div className="">
@@ -33,5 +33,5 @@ import useFetch from '../hooks/useFetch';
             ))}
           </section>
         </div>
-      );
+      )
     }
