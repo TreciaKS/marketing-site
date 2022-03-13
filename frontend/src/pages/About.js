@@ -10,7 +10,7 @@ function AboutPage() {
     
         return (
             <article className="">
-                <h2>More Description</h2>
+                <h2>Would you like to view this house or explore similar ones in your desired area? Contact Us!</h2>
                 <hr />
                 <section className="">
                     <h2>{estate.attributes.name}</h2>
