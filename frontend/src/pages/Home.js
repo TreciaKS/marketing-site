@@ -11,7 +11,7 @@ export default function Homepage() {
     return (
         <div className="">
           <section>
-            <h2>Welcome to our Estate</h2>
+            <h2 className="text-2xl">Welcome to our Estate</h2>
             <hr className="" />
             <p>We help you find your new home</p>
     
