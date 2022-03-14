@@ -23,8 +23,8 @@ export default function Estatepage() {
                                     className='object-cover object-center h-full w-full'
                                 />
                                 </div>
-                                    <p className='title-font text-2xl font-medium text-gray-900 mt-6 mb-3'>{house.attributes.price}</p>
-                                    <p className='leading-relaxed text-base'>{house.attributes.description}</p>
+                                    <p className='title-font text-2xl font-medium mt-6 mb-3 text-gray-100'>{house.attributes.name}</p>
+                                    <p className='leading-relaxed text-base text-gray-300'>{house.attributes.description}</p>
                                     <Link 
                                     to={`${house.id}`} 
                                     className='inline-flex text-gray-50 border-yellow-500 border-2 mt-3 py-2 px-6 focus:outline-none hover:text-yellow-500 rounded text-lg'>
