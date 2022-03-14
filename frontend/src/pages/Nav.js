@@ -34,7 +34,7 @@ export default function NavHeader() {
                   <li>Estates</li>
                 </Link>
                 <a 
-                href='https'
+                href='https://github.com/TreciaKS/marketing-site'
                 className="mr-5 hover:text-yellow-500">Github</a>
             </nav>
           </div>
