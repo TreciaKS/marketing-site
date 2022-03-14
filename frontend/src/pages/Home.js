@@ -16,7 +16,7 @@ export default function Homepage() {
           </div>
 
                 {estate.splice(0, 2).map((house) => (
-                  <article className="text-gray-600 body-font" key={house.id}>
+                  <article className="text-gray-200 body-font" key={house.id}>
                     <h1 className="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl pt-10 pb-10">🎇 Featured <span class="text-yellow-500">House Of The Day</span>🎇</h1>
                     <section className="container mx-auto flex px-5 items-center justify-center flex-col">
                       <img
