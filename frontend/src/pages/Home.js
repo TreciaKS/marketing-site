@@ -4,8 +4,8 @@ import useFetch from '../hooks/useFetch'
     
 export default function Homepage() {
     const { estate, error, loading } = useFetch('http://localhost:1337/api/estates?populate=*')
-    if (loading) return <p> Loading... </p>
-    if (error) return <p> I'm sorry, I cannot display anything at the moment</p>
+    if (loading) return <p className="flex justify-center items-center h-screen text-2xl"> Loading... </p>
+    if (error) return <p className="flex justify-center items-center h-screen text-2xl"> I'm sorry, I cannot display anything at the moment</p>
     
     return (
       <section class="bg-white dark:bg-gray-800">
