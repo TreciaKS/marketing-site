@@ -8,9 +8,9 @@ export default function Homepage() {
     if (error) return <p className="flex justify-center items-center h-screen text-2xl"> I'm sorry, I cannot display anything at the moment</p>
     
     return (
-      <section class="bg-white dark:bg-gray-800">
-        <div class="container px-6 py-12 mx-auto text-center">
-          <div class="max-w-lg mx-auto">
+      <section className="bg-white dark:bg-gray-800">
+        <div className="container px-6 py-12 mx-auto text-center">
+          <div className="max-w-lg mx-auto">
                 <h1 className="text-4xl font-bold text-gray-800 dark:text-white md:text-4xl">Welcome to <span class="text-yellow-500">Housed</span></h1>
                 <p className="mt-6 text-gray-500 dark:text-gray-300">On your mobile or computer, you can access all of South Africa's leading Estate Agent properties for sale or rent. You can easily find and manage your favorite properties with Housed user-friendly interface.</p>
           </div>
