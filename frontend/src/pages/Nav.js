@@ -21,6 +21,7 @@ export default function NavHeader() {
                   <li>Estates</li>
                 </Link>
                 <a 
+                rel="noopener noreferrer" target="_blank"
                 href='https://github.com/TreciaKS/marketing-site'
                 className="mr-5 hover:text-yellow-500">Github</a>
             </nav>
